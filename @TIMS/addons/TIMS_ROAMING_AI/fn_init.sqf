@@ -1,0 +1,1 @@
+[] execVM "TIMS_ROAMING_AI\initPost.sqf";
