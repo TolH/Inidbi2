@@ -1,0 +1,52 @@
+version=1;
+blood=1;
+singleVoice=0;
+gamma=1;
+brightness=1;
+maxSamplesPlayed=96;
+class DifficultyPresets
+{
+	class CustomDifficulty
+	{
+		class Options
+		{
+			reducedDamage=1;
+			groupIndicators=1;
+			friendlyTags=0;
+			enemyTags=0;
+			detectedMines=1;
+			commands=1;
+			waypoints=1;
+			tacticalPing=1;
+			weaponInfo=2;
+			stanceIndicator=2;
+			staminaBar=1;
+			weaponCrosshair=0;
+			visionAid=1;
+			thirdPersonView=1;
+			cameraShake=1;
+			scoreTable=1;
+			deathMessages=1;
+			vonID=1;
+			mapContent=0;
+			autoReport=0;
+			multipleSaves=0;
+		};
+		aiLevelPreset=3;
+	};
+	class CustomAILevel
+	{
+		skillAI=0.050000001;
+		precisionAI=0.050000001;
+	};
+};
+sceneComplexity=400000;
+shadowZDistance=100;
+viewDistance=1000;
+preferredObjectViewDistance=900;
+terrainGrid=25;
+volumeCD=10;
+volumeFX=10;
+volumeSpeech=10;
+volumeVoN=10;
+vonRecThreshold=0.029999999;
