@@ -1,7 +1,11 @@
 # Inidbi2
 Working template for inidbi2 with @Ravage mods.
 
+
 ### Missing mods are : @Ravage; and @CBA_A3; (Can be found on steamworkshop)
+@Ravage (https://steamcommunity.com/workshop/filedetails/?id=1376636636)
+
+@CBA_A3 (https://steamcommunity.com/workshop/filedetails/?id=450814997)
 
 
 #- To save character data, use keyboard keys "9"
