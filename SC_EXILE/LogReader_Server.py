@@ -2,8 +2,6 @@
 #!/usr/bin/env python3
 
 import sys, time, os, glob, psutil
-import random
-import platform
 
 #//=======================================================//
 #CHECK RUNNING PROCESS FUNCTION psutil
@@ -17,60 +15,6 @@ def checkIfProcessRunning(processName):
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
     return False;
-#//=======================================================//
-snowflakes = {}
-columns, rows = (212,55)
-def clear_screen(numlines=100):
-    """Clear the console.
-    numlines is an optional argument used only as a fall-back.
-    """
-    if os.name == "posix":
-        # Unix/Linux/MacOS/BSD/etc
-        os.system('clear')
-    elif os.name in ("nt", "dos", "ce"):
-        # DOS/Windows
-        os.system('cls')
-    else:
-        # Fallback for other operating systems.
-        print('\n' * rows)
-#//=======================================================//
-def get_random_flake():
-    flakes = '*80§@¢${FLAG}'
-    return random.choice(flakes)
-#//=======================================================//
-def move_flake(col):
-    if snowflakes[col][0]+1 == rows:
-        snowflakes[col] = [1, get_random_flake()]
-    else:
-        print("\033[%s;%sH  " % (snowflakes[col][0], col))
-        snowflakes[col][0] += 1
-        print("\033[%s;%sH%s" % (snowflakes[col][0], col, snowflakes[col][1]))
-        print("\033[1;1H")
-#//=======================================================//
-if __name__ == "__main__":
-    keep_snowing = 1
-    added_delay = 0
-    clear_screen()
-    while (keep_snowing == 1):
-        added_delay = added_delay + 1
-        col = random.choice(range(1, int(columns)))
-        # its already on the screen, move it
-        if col in snowflakes.keys():
-            move_flake(col)
-        else:
-        # otherwise put it on the screen
-            flake = get_random_flake()
-            snowflakes[col] = [1, flake]
-
-            print("\033[%s;%sH%s" % (snowflakes[col][0], col,
-                    snowflakes[col][1]))
-        # key any flakes on the screen moving
-        for flake in snowflakes.keys():
-            move_flake(flake)
-        time.sleep(0.02)
-        if (added_delay == 54):
-            keep_snowing = 0
-            os.system('cls')
 #//=======================================================//
 
 print ('''
@@ -109,7 +53,7 @@ Game_Logs_Location = 'D:/SteamLibrary/steamapps/common/Arma 3/SC_EXILE/*.rpt'
 #//WAIT ~5SECONDS SO LOGS ARE CREATED BY SERVER FIRST
 array_char_sel = ['.',':']
 last_tick = 0
-sys.stdout.write('Streaming logs:')
+sys.stdout.write('Streaming logs shortly:')
 for tick_range in range(9):
     last_tick = last_tick + 1
     sys.stdout.write (array_char_sel[0])
