@@ -1,0 +1,74 @@
+v.1.7
+CHANGES
+- slz_addAllAddons variable added
+	- if it's set to true (default) all available addons will be added to the mod curators
+
+v.1.6
+CHANGES
+- slz_sharedObjects variable added
+	- if it's set to true all objects which are created by slz curators are editable for every slz curator
+
+FIXED
+- possible fix for exile server
+
+v.1.5
+CHANGES
+- neutral Zeus removed	
+- slz_editPlayerUnits variable removed	
+
+FIXED
+- zeus remotecontrol caused diconnect from curator module
+- some other bugs
+
+v.1.4.1
+FIXED
+-userconfig path capitalization changed to lowercase (issue with case sensitve file system)
+
+v.1.4
+REWORKED CODE
+- complete rewrite
+
+CHANGES
+- no admin zeus anymore (i think there is no need anymore)
+- slz_whitelist variable added
+	- in the userconfig there is a array where you can add uid's (it is the number in the steam-profile link)
+	- if your uid is in this array you have zeus abilities
+- slz_neutralZeus variable removed
+	- if you press zeus key you get the control of the virtualCurator which is always neutral
+	- your playerunit become hidden and invulnerable
+- slz_editPlayerUnits variable added
+	- all playerunits can be edited if these players are in curatormode
+	- if it is set to false these units can also add to the curator editable object list by other scripts or mods like ares
+
+KNOWN ISSUES
+- Don't mix up to many zeus login methods (native use, too)
+- if you use #adminLogged Game Master Modules and virtualCurator entities or player controled curators don't login as admin if you are in a other curator slot
+- the native curator itself has a bug: if you are in the mission, go back to loginscreen and join again, you have to die before you can use the curator again (expect the #adminLogged method)
+
+v.1.3
+FIXED
+- bug in the per frame eventHandler
+
+v.1.2
+REWORKED CODE
+- remove while do loops ---> replaced with a per frame eventHandler
+
+ADDED
+- added the possibility to add objects to zeus (more infos in the slz_settings.sqf)
+
+FIXED
+- known issues from 1.1
+
+v.1.1
+ADDED
+- neutral zeus
+	- this option change the playerside if you enter the zeus to logic because only a neutral zeus can set all attributes: for example the sector control module
+	- copy the userconfig folder to your arma 3 folder and change the value in the slz_settings.sqf to true. (default = false)
+FIXED
+- if the admin logout the other players can't be the zeus.
+
+KNOWN ISSUES
+- if you are logged in as admin and you go into lobby and return to the game you have to logout and login to use the zeus again
+
+v.1.0
+- first release
