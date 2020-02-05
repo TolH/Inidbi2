@@ -19,3 +19,12 @@ Working template for inidbi2 with @Ravage mods.
 #- Inidbi2 client request files are located in \MPMissions\DayZ_Ravage.Altis\Inidb2_Functions\
 
 #- Functions call for client inidb2 located in descrition.ext 
+
+-===================================================================================-
+
+#CONFIGS#
+
+
+
+    
+-===================================================================================-

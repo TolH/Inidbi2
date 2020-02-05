@@ -1,6 +1,6 @@
 	@ECHO off
 	COLOR 0A
-	TITLE EXILE Server restarter
+	TITLE Arma3 Server restarter
 	SETLOCAL EnableExtensions enabledelayedexpansion
 	SET StartServer=arma3server_x64.exe
 	SET StartLOGREADER=SC_EXILE\LogReader_Server.py
